@@ -29,6 +29,7 @@ Feel free to add more funny quotes and PR.
 
 ## Todo
 - [ ] Linux install script for moving to `/usr/local/bin/`
+- [ ] The random seed for the string id is generated based on `time(0)` (seconds). Would be great have a number that changes every time instead of every second.
 
 ## License
 ```
