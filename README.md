@@ -6,11 +6,24 @@
 ## Description
 Simple C program for printing nice "touch grass" quotes.
 
+## Installing
+Compile the program using `compile.sh`
+```bash
+./compile.sh src/main.c
+
+# If you are in windows and you have sh, you can use
+#   sh compile.sh src/main.c
+```
+Install script coming soon.
+
 ## Usage
 ```bash
 touch-grass       # Normal print
 touch-grass -c    # Print with color
 ```
+
+## Todo
+- [ ] Linux install script for moving to `/usr/local/bin/`
 
 ## License
 ```
