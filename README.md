@@ -22,6 +22,11 @@ touch-grass       # Normal print
 touch-grass -c    # Print with color
 ```
 
+## Contributing
+Check [contributing.md](CONTRIBUTING.md) for more info.
+
+Feel free to add more funny quotes and PR.
+
 ## Todo
 - [ ] Linux install script for moving to `/usr/local/bin/`
 
