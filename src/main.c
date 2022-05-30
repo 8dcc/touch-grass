@@ -30,29 +30,22 @@ int main(int argc, char** argv) {
 }
 
 void print_simple(const int str_id) {
-    /*
-     * We need to add one for the "sentinel value" (NULL)
-     * See: https://stackoverflow.com/questions/43844923
-     * I mean, we don't really need it because we know STR_NUM but idk
-     */
-    const char* str_arr[STR_NUM+1] = {
+    const char* str_arr[STR_NUM] = {
         "Remember to touch some grass.",
         "Did you have a shower today?",
         "You should go outside.",
-        "You need the sun light.",
-        NULL
+        "You need the sun light."
     };
 
     printf(str_arr[str_id]);
 }
 
 void print_color(const int str_id) {
-    const char* str_arr[STR_NUM+1] = {
+    const char* str_arr[STR_NUM] = {
         "Remember to touch some " COL_2 "grass" COL_0 ".",
         "Did you have a " COL_6 "shower" COL_0 " today?",
         "You should go " COL_3 "outside" COL_0 ".",
-        "You need the " COL_3 "sun" COL_0 " light.",
-        NULL
+        "You need the " COL_3 "sun" COL_0 " light."
     };
 
     printf(str_arr[str_id]);
