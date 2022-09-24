@@ -33,7 +33,7 @@ static void print_simple(const int str_id) {
         "You need the sun light."
     };
 
-    printf(str_arr[str_id]);
+    printf("%s\n", str_arr[str_id]);
 }
 
 static void print_color(const int str_id) {
@@ -44,5 +44,5 @@ static void print_color(const int str_id) {
         "You need the " COL_3 "sun" COL_0 " light."
     };
 
-    printf(str_arr[str_id]);
+    printf("%s\n", str_arr[str_id]);
 }
