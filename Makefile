@@ -1,15 +1,15 @@
 
 CC=gcc
 CFLAGS=-Wall
-BIN=touch-grass
+BIN=touch-grass.out
 
-all: $(BIN).out
+all: $(BIN)
 
-$(BIN).out: src/*.c src/*.h
+$(BIN): src/*.c src/*.h
 	$(CC) $(CFLAGS) -o $@ src/main.c
 
-run: $(BIN).out
+run: $(BIN)
 	./$<
 
 clean:
-	rm $(BIN).out
+	rm -f $(BIN)
