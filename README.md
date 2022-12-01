@@ -7,19 +7,22 @@
 Simple C program for printing nice "touch grass" quotes.
 
 ## Installing
-Compile the program using `compile.sh`
+Compile the program running:
 ```bash
-./compile.sh src/main.c
+make
 
-# If you are in windows and you have sh, you can use
-#   sh compile.sh src/main.c
+# Or if you want to add it to the path
+sudo make install
 ```
-Install script coming soon.
 
 ## Usage
-```bash
-touch-grass       # Normal print
-touch-grass -c    # Print with color
+After compiling simply run:
+```console
+$ ./touch-grass -h
+Usage:
+    touch-grass       - Run the program with no color.
+    touch-grass -c    - Run the program with color enabled.
+    touch-grass -h    - Show this help.
 ```
 
 ## Contributing
@@ -28,8 +31,8 @@ Check [contributing.md](CONTRIBUTING.md) for more info.
 Feel free to add more funny quotes and PR.
 
 ## Todo
-- [ ] Linux install script for moving to `/usr/local/bin/`
-- [ ] The random seed for the string id is generated based on `time(0)` (seconds). Would be great have a number that changes every time instead of every second.
+- [X] Linux install target for moving to `/usr/local/bin/`
+- [ ] The random seed for the string id is generated based on `time(0)` (seconds). Would be great have a number that changes more frequently.
 
 ## License
 ```
