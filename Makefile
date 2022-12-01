@@ -1,7 +1,7 @@
 
 CC=gcc
 CFLAGS=-Wall
-BIN=touch-grass.out
+BIN=touch-grass
 
 all: $(BIN)
 
@@ -10,6 +10,12 @@ $(BIN): src/*.c src/*.h
 
 run: $(BIN)
 	./$<
+
+install: $(BIN)
+	install --mode=0755 $< /usr/local/bin/
+
+uninstall: $(BIN)
+	rm -f /usr/local/bin/$<
 
 clean:
 	rm -f $(BIN)
