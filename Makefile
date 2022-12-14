@@ -3,6 +3,8 @@ CC=gcc
 CFLAGS=-Wall
 BIN=touch-grass
 
+.PHONY: clean all install uninstall run
+
 all: $(BIN)
 
 $(BIN): src/*.c src/*.h
